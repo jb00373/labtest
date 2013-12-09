@@ -1,4 +1,8 @@
 Labtest::Application.routes.draw do
+  
+  root 'static_pages#index'
+  match '/product_catalogue', to: 'static_pages#product_catalogue', via: 'get'
+  match '/submitted_orders', to: 'static_pages#submitted_orders', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
